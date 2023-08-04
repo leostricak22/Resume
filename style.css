@@ -75,6 +75,7 @@ span.tag {
 
 .multiplesections {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -114,10 +115,75 @@ span.experience {
     margin-left: 5px;
 }
 
+.skills {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.verticalcenter {
+    margin: 0;
+    position: relative;
+    top: -7px;
+}
+
+.skill {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 15px 5px 10px;
+    margin: 5px;
+}
+
+.skilltext {
+    margin-left: 5px;
+}
+
 .gray {
     color: gray;
 }
 
 .goldish {
     color: #c7ac3c;
+}
+
+@media screen and (max-width: 1300px) {
+    .sectioncontentmain {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+    .tagcontent {
+        font-size: 15px;
+    }
+    .sectionTitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
 }

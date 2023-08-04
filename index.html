@@ -4,6 +4,7 @@
         <title>Leo Stričak</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
         <div class="title">
@@ -19,7 +20,7 @@
                     <span class="tag">%></span>
                 </legend>
                 <div class="multiplesections">
-                    <fieldset class="sectioncontent">
+                    <fieldset class="sectioncontent sectioncontentmain">
                         <legend class="tagcontent">Contact info</legend>
                         <table class="contact">
                             <tr class="contactrow">
@@ -56,7 +57,7 @@
                             </tr>
                         </table>
                     </fieldset>
-                    <fieldset class="sectioncontent">
+                    <fieldset class="sectioncontent sectioncontentmain">
                         <legend class="tagcontent">About me</legend>
                         <table class="aboutme">
                             <tr class="aboutme">
@@ -75,18 +76,27 @@
                                     <span>November 11th 2004</span>
                                 </td>
                             </tr>
+                        </table>
+                        <table class="aboutme">
                             <tr class="aboutme">
                                 <td class="aboutme">
                                     <img class="icon" src="/img/icons/language.svg" alt="language" width="20">
                                 </td>
                                 <td class="aboutme">
-                                    <span>Croatian - Native Proficiency</span>
+                                    <span>Croatian</span>
+                                </td>
+                                <td class="aboutme">
+                                    <span>Native proficiency</span>
                                 </td>
                             </tr>
                             <tr class="aboutme">
-                                <td class="aboutme"></td>
                                 <td class="aboutme">
-                                    <span>English&nbsp; - Full Professional Proficiency</span>
+                                </td>
+                                <td class="aboutme">
+                                    <span>English</span>
+                                </td>
+                                <td class="aboutme">
+                                    <span>Full professional proficiency</span>
                                 </td>
                             </tr>
                         </table>
@@ -150,6 +160,105 @@
                     </div>
                 </fieldset>
             </fieldset>
+            <fieldset class="section">
+                <legend class="sectionTitle">
+                    <span class="tag"><%=</span>
+                    skills
+                    <span class="tag">%></span>
+                </legend>
+                <fieldset class="sectioncontent">
+                    <legend class="tagcontent">Programming languages</legend>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="/img/icons/js.svg" alt="js" width="30">
+                            <span class="verticalcenter skilltext">JavaScript</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/php.svg" alt="php" width="30">
+                            <span class="verticalcenter skilltext">PHP</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/python.svg" alt="python" width="30">
+                            <span class="verticalcenter skilltext">Python</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/cs.svg" alt="cs" width="30">
+                            <span class="verticalcenter skilltext">C#</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/cpp.svg" alt="cpp" width="30">
+                            <span class="verticalcenter skilltext">C++</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/c.svg" alt="c" width="30">
+                            <span class="verticalcenter skilltext">C</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/java.svg" alt="java" width="30">
+                            <span class="verticalcenter skilltext">Java</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/sql.svg" alt="sql" width="30">
+                            <span class="verticalcenter skilltext">SQL</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset class="sectioncontent">
+                    <legend class="tagcontent">Technologies</legend>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="/img/icons/nodejs.svg" alt="nodejs" width="30">
+                            <span class="verticalcenter skilltext">Node.js</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/flask.svg" alt="flask" width="30">
+                            <span class="verticalcenter skilltext">Flask</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/bootstrap.svg" alt="bootstrap" width="30">
+                            <span class="verticalcenter skilltext">Bootstrap</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/jquery.svg" alt="jquery" width="30">
+                            <span class="verticalcenter skilltext">jQuery</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset class="sectioncontent">
+                    <legend class="tagcontent">Tools</legend>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="/img/icons/git.svg" alt="git" width="30">
+                            <span class="verticalcenter skilltext">Git</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/cpanel.svg" alt="cpanel" width="30">
+                            <span class="verticalcenter skilltext">cPanel</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/linux.svg" alt="linux" width="30">
+                            <span class="verticalcenter skilltext">Linux</span>
+                        </div>
+                        <div class="skill">
+                            <img src="/img/icons/figma.svg" alt="figma" width="30">
+                            <span class="verticalcenter skilltext">Figma</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset class="sectioncontent">
+                    <legend class="tagcontent">Databases</legend>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="/img/icons/mysql.svg" alt="mysql" width="30">
+                            <span class="verticalcenter skilltext">MySQL</span>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
         </div>
     </body>
+    <br>
 </html>
