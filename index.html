@@ -27,9 +27,11 @@
                                 <td class="contact">
                                     <img class="icon" src="/img/icons/email.svg" alt="email" width="20">
                                 </td>
-                                <td class="contact">
-                                    <a href="mailto:stricak.leo@gmail.com">stricak.leo@gmail.com</a>
-                                </td>
+                                <template>
+                                    <td class="contact">
+                                        <a v-bind:href="mailto"> {{ mail }} </a>
+                                    </td>
+                                </template>
                             </tr>
                             <tr class="contactrow">
                                 <td class="contact">
@@ -261,4 +263,6 @@
         </div>
     </body>
     <br>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </html>
