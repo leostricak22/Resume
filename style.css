@@ -146,6 +146,12 @@ span.experience {
     color: #c7ac3c;
 }
 
+@media screen and (min-width: 1300px) {
+    .sectioncontentmain {
+        width: 45%;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .sectioncontentmain {
         width: 100%;
@@ -155,6 +161,10 @@ span.experience {
 @media screen and (max-width: 1000px) {
     .container {
         width: 60%;
+    }
+
+    .titleName {
+        font-size: 40px;
     }
 }
 
