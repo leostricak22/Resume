@@ -146,6 +146,18 @@ span.experience {
     color: #c7ac3c;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.small-text {
+    font-size: medium;
+}
+
+.company {
+    height: 40px;
+}
+
 @media screen and (min-width: 1300px) {
     .sectioncontentmain {
         width: 45%;
@@ -197,3 +209,4 @@ span.experience {
         width: 100%;
     }
 }
+
