@@ -88,7 +88,7 @@ td.aboutme {
 }
 
 .icon {
-    -webkit-filter: invert(100%);
+    -webkit-filter: invert(100%) contrast(0%);
 }
 
 .educationcontent {
