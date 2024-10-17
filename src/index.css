@@ -3,11 +3,19 @@
   src: url('./assets/fonts/JetBrainsMono-Light.ttf') format('truetype');
 }
 
+:root {
+  --themeColor: #fff;
+  --themeBackgroundColor: #2f3032;
+  --themeJsonNameColor: #93D0F0;
+  --themeJsonValueColor: #CB8F76;
+
+}
+
 body {
   font-family: 'JetBrainsMonoLight', sans-serif;
   margin: 10px;
   padding: 0;
-  background-color: #2f3032;
+  background-color: var(--themeBackgroundColor);
 }
 
 #main {
@@ -22,20 +30,19 @@ li {
 
 .title {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .jsonName {
-  color: rgb(147, 208, 240);
+  color: var(--themeJsonNameColor);
 }
 
 .jsonValue {
-  color: rgb(203, 143, 118);
+  color: var(--themeJsonValueColor);
 }
 
 .jsonBrackets {
-  color: white;
-  font-size: 28px;
+  color: var(--themeColor);
 }
 
 .ejsTag {
@@ -44,7 +51,7 @@ li {
 }
 
 .sectionTitleValue {
-  color: white;
+  color: var(--themeColor);
   font-size: 28px;
 }
 
@@ -77,7 +84,7 @@ ul li {
   justify-content: flex-start;
   padding: 8px 0;
   font-size: 20px;
-  color: white;
+  color: var(--themeColor);
   width: 100%;
   flex-direction: column;
 }
@@ -94,7 +101,7 @@ ul li svg {
 }
 
 a {
-  color: white;
+  color: var(--themeColor);
   text-decoration: underline;
 }
 
@@ -122,4 +129,18 @@ li span.moreInfo {
 
 .gold {
   color: #c7ac3c;
+}
+
+#theme {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: var(--themeColor);
+  width: 50px;
+  height: 50px;
+}
+
+#theme svg {
+  width: 50px;
+  height: 50px;
 }

@@ -1,7 +1,27 @@
 import SectionData from "./SectionData";
 import Section from "./components/Section";
+import {IoSunnyOutline} from "react-icons/io5";
+import {useState} from "react";
 
 function App() {
+    const [theme, setTheme] = useState("dark");
+
+    function toggleTheme() {
+        if(theme === "dark") {
+            setTheme("light");
+            document.documentElement.style.setProperty('--themeColor', "#000");
+            document.documentElement.style.setProperty('--themeBackgroundColor', "#d0d1d3");
+            document.documentElement.style.setProperty('--themeJsonNameColor', "#000");
+            document.documentElement.style.setProperty('--themeJsonValueColor', "#000");
+        } else {
+            setTheme("dark");
+            document.documentElement.style.setProperty('--themeColor', "#fff");
+            document.documentElement.style.setProperty('--themeBackgroundColor', "#2f3032");
+            document.documentElement.style.setProperty('--themeJsonNameColor', "#93D0F0");
+            document.documentElement.style.setProperty('--themeJsonValueColor', "#CB8F76");
+        }
+    }
+
     return (
         <div id="main">
             <p className="title">
@@ -18,6 +38,9 @@ function App() {
                     );
                 })
             }
+            <div id="theme" onClick={toggleTheme}>
+                <IoSunnyOutline />
+            </div>
         </div>
     );
 }
