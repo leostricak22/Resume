@@ -10,6 +10,16 @@ body {
   background-color: #2f3032;
 }
 
+#menu {
+  width: 60%;
+  margin: auto;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
 .jsonName {
   color: rgb(147, 208, 240);
 }
@@ -51,16 +61,23 @@ ul {
 
 ul li {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   padding: 8px 0;
   font-size: 16px;
   color: white;
+  width: 100%;
+  flex-direction: column;
 }
 
 ul li svg {
   margin-right: 10px;
   font-size: 20px;
   color: #888787;
+}
+
+.iconList {
+    display: flex;
+    justify-content: flex-start;
 }
 
 a {
@@ -75,4 +92,21 @@ p.list {
 
 .multipleList {
   align-items: flex-start;
+}
+
+.elaborationList {
+  margin-left: 8px;
+}
+
+.elaboration {
+  margin: 0;
+  padding: 0;
+}
+
+li span.moreInfo {
+    color: gray;
+}
+
+.gold {
+  color: #c7ac3c;
 }
