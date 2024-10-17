@@ -73,7 +73,7 @@ const educationSection = {
         {
             value: "Technical school Čakovec",
             elaboration: [
-                {value: "Computer technician", style: "gold"},
+                {value: "Computer Technician", style: "gold"},
                 {value: "High School Diploma", style: "normal"},
                 {value: "September 2019 - May 2023", style: "moreInfo"},
             ]
