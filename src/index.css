@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'JetBrainsMonoLight';
+  src: url('./assets/fonts/JetBrainsMono-Light.ttf') format('truetype');
+}
+
+body {
+  font-family: 'JetBrainsMonoLight', sans-serif;
+  margin: 10px;
+  padding: 0;
+  background-color: #2f3032;
+}
+
+.jsonName {
+  color: rgb(147, 208, 240);
+}
+
+.jsonValue {
+  color: rgb(203, 143, 118);
+}
+
+.jsonBrackets {
+  color: white;
+}
+
+.ejsTag {
+  color: #a91e50;
+}
+
+.sectionTitleValue {
+  color: white;
+}
+
+.section {
+  border-radius: 5px;
+  display: flex;
+}
+
+.subSectionTitle {
+  color: #c7ac3c;
+}
+
+.subSection {
+  border-radius: 5px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 16px;
+  color: white;
+}
+
+ul li svg {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #888787;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+p.list {
+  margin: 0;
+  padding: 0;
+}
+
+.multipleList {
+  align-items: flex-start;
+}
