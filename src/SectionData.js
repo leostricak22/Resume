@@ -4,7 +4,6 @@ import {
     FaDatabase,
     FaDiscord,
     FaDocker, FaFigma,
-    FaGit,
     FaGithub,
     FaJava,
     FaLinkedin, FaLinux,
@@ -12,7 +11,6 @@ import {
 } from "react-icons/fa";
 import {FaC, FaLocationDot} from "react-icons/fa6";
 import {
-    SiC,
     SiCplusplus,
     SiCsharp, SiGit,
     SiJavascript, SiJquery, SiMysql,

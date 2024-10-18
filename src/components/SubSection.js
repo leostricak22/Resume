@@ -6,6 +6,7 @@ export default function SubSection({subSection}) {
         <fieldset className="subSection">
             { subSection.name && <legend className="subSectionTitle">{subSection.title}</legend> }
             <List list={subSection.list} />
+
             <SkillList list={subSection.skillList} />
         </fieldset>
     );

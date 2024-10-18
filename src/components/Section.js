@@ -1,6 +1,5 @@
 import SubSection from "./SubSection";
 import List from "./List";
-import SkillList from "./SkillList";
 
 export default function Section({section}) {
     return (
@@ -18,7 +17,6 @@ export default function Section({section}) {
             }
 
             <List list={section.list} />
-            <SkillList list={section.skillList} />
         </fieldset>
     );
 }

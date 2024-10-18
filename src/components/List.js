@@ -18,22 +18,28 @@ export default function List({list}) {
     }
 
     return (
-        <ul>
+        <>
             {
-                list && list.map((item) => {
-                    return (
-                        <li>
-                            <div className={"iconList " + (Array.isArray(item.value) && "multipleList ") + (item.gold && " gold ")}>
-                                {item.icon && item.icon}
-                                {item.href && <a href={item.href}>{getItemValue(item)}</a>}
-                                {!item.href && (getItemValue(item))}
-                            </div>
+                list &&
+                <ul>
+                    {
+                        list.map((item) => {
+                            return (
+                                <li>
+                                    <div
+                                        className={"iconList " + (Array.isArray(item.value) && "multipleList ") + (item.gold && " gold ")}>
+                                        {item.icon && item.icon}
+                                        {item.href && <a href={item.href}>{getItemValue(item)}</a>}
+                                        {!item.href && (getItemValue(item))}
+                                    </div>
 
-                            { item.elaboration && <Elaboration elaborations={item} /> }
-                        </li>
-                    );
-                })
+                                    {item.elaboration && <Elaboration elaborations={item}/>}
+                                </li>
+                            );
+                        })
+                    }
+                </ul>
             }
-        </ul>
+        </>
     );
 }
