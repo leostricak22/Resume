@@ -22,8 +22,8 @@ export default function List({list}) {
             {
                 list && list.map((item) => {
                     return (
-                        <li className={(Array.isArray(item.value) && "multipleList")}>
-                            <div className="iconList">
+                        <li>
+                            <div className={"iconList " + (Array.isArray(item.value) && "multipleList")}>
                                 {item.icon && item.icon}
                                 {item.href && <a href={item.href}>{getItemValue(item)}</a>}
                                 {!item.href && (getItemValue(item))}

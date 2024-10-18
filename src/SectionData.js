@@ -1,5 +1,5 @@
-import {IoCalendar, IoCar, IoMail} from "react-icons/io5";
-import {FaDiscord, FaGithub, FaLanguage, FaLinkedin} from "react-icons/fa";
+import {IoCalendar, IoCar, IoLanguage, IoMail} from "react-icons/io5";
+import {FaDiscord, FaGithub, FaLinkedin} from "react-icons/fa";
 import {FaLocationDot} from "react-icons/fa6";
 
 const introductionSection = {
@@ -48,7 +48,7 @@ const introductionSection = {
                     value: "AM B F G"
                 },
                 {
-                    icon: <FaLanguage />,
+                    icon: <IoLanguage />,
                     value: [
                         "Croatian - Native proficiency",
                         "English - Full professional proficiency"

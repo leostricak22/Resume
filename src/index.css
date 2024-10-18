@@ -8,7 +8,8 @@
   --themeBackgroundColor: #2f3032;
   --themeJsonNameColor: #93D0F0;
   --themeJsonValueColor: #CB8F76;
-
+  --themeGold: #c7ac3c;
+  --themeIconColor: #888787;
 }
 
 body {
@@ -65,13 +66,15 @@ li {
 }
 
 .subSectionTitle {
-  color: #c7ac3c;
+  color: var(--themeGold);
   font-size: 22px;
 }
 
 .subSection {
   border-radius: 5px;
   width: 100%;
+  margin: 10px;
+  padding-left: 25px;
 }
 
 ul {
@@ -92,12 +95,13 @@ ul li {
 ul li svg {
   margin-right: 10px;
   font-size: 20px;
-  color: #888787;
+  color: var(--themeIconColor);
 }
 
 .iconList {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 a {
@@ -106,8 +110,7 @@ a {
 }
 
 p.list {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 10px;
 }
 
 .multipleList {
@@ -128,7 +131,7 @@ li span.moreInfo {
 }
 
 .gold {
-  color: #c7ac3c;
+  color: var(--themeGold);
 }
 
 #theme {

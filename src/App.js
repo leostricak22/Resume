@@ -13,12 +13,16 @@ function App() {
             document.documentElement.style.setProperty('--themeBackgroundColor', "#d0d1d3");
             document.documentElement.style.setProperty('--themeJsonNameColor', "#000");
             document.documentElement.style.setProperty('--themeJsonValueColor', "#000");
+            document.documentElement.style.setProperty('--themeGold', "#775900");
+            document.documentElement.style.setProperty('--themeIconColor', "#000");
         } else {
             setTheme("dark");
             document.documentElement.style.setProperty('--themeColor', "#fff");
             document.documentElement.style.setProperty('--themeBackgroundColor', "#2f3032");
             document.documentElement.style.setProperty('--themeJsonNameColor', "#93D0F0");
             document.documentElement.style.setProperty('--themeJsonValueColor', "#CB8F76");
+            document.documentElement.style.setProperty('--themeGold', "#c7ac3c");
+            document.documentElement.style.setProperty('--themeIconColor', "#888787");
         }
     }
 
