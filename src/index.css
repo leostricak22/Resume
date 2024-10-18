@@ -74,12 +74,12 @@ li {
   border-radius: 5px;
   width: 100%;
   margin: 10px;
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 10px;
 }
 
 ul li {

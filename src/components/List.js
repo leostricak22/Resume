@@ -7,7 +7,7 @@ export default function List({list}) {
                 <div>
                     {
                         item.value.map((itemValue) => {
-                            return <p className="list">{itemValue}</p>
+                            return <p className={"list"}>{itemValue}</p>
                         })
                     }
                 </div>
@@ -23,7 +23,7 @@ export default function List({list}) {
                 list && list.map((item) => {
                     return (
                         <li>
-                            <div className={"iconList " + (Array.isArray(item.value) && "multipleList")}>
+                            <div className={"iconList " + (Array.isArray(item.value) && "multipleList ") + (item.gold && " gold ")}>
                                 {item.icon && item.icon}
                                 {item.href && <a href={item.href}>{getItemValue(item)}</a>}
                                 {!item.href && (getItemValue(item))}

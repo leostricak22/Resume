@@ -89,10 +89,76 @@ const educationSection = {
     ]
 }
 
+const experienceSection = {
+    name: "experience",
+    title: "experience",
+    subSections: [
+        {
+            name: "tacta",
+            title: "Tacta",
+            list: [
+                {
+                    value: "Full Stack Developer Intern",
+                    elaboration: [
+                        {value: "Design and development of a mobile application, it's backend and database.", style: "normal"},
+                        {value: "April 2024 - June 2024", style: "moreInfo"},
+                    ]
+                }
+            ]
+        },
+        {
+            name: "limex",
+            title: "Limex Computer & Software",
+            list: [
+                {
+                    value: "Full Stack Developer",
+                    elaboration: [
+                        {value: "Design and development of web applications and databases.", style: "normal"},
+                        {value: "July 2023 - December 2023", style: "moreInfo"},
+                    ]
+                },
+                {
+                    value: "Computer Technician",
+                    elaboration: [
+                        {value: "Computer diagnostics, repairs, installation and maintenance of servers, networks,...", style: "normal"},
+                        {value: "July 2022 - September 2022", style: "moreInfo"},
+                        {value: "July 2021 - September 2021", style: "moreInfo"},
+                        {value: "July 2020 - September 2020", style: "moreInfo"},
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+const honorsAndAwardsSection = {
+    name: "honorsAndAwards",
+    title: "honors & awards",
+    list: [
+        {
+            value: "High School valedictorian",
+            gold: true,
+            elaboration: [
+                {value: "Technical school Čakovec", style: "normal"},
+                {value: "Awarded in 2023", style: "moreInfo"},
+            ]
+        },
+        {
+            value: "Croatian National Cybersecurity Team Member",
+            gold: true,
+            elaboration: [
+                {value: "ECSC2022", style: "normal"},
+                {value: "European Cybersecurity Challenge 2022", style: "moreInfo"},
+            ]
+        }
+    ]
+}
 
 const SectionData = [
     introductionSection,
-    educationSection
+    educationSection,
+    experienceSection,
+    honorsAndAwardsSection
 ]
 
 export default SectionData;
