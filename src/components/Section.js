@@ -1,9 +1,10 @@
 import SubSection from "./SubSection";
 import List from "./List";
+import SkillList from "./SkillList";
 
 export default function Section({section}) {
     return (
-        <fieldset className="section">
+        <fieldset className={"section " + (section.sectionFlex === "column" && "sectionCol")}>
             <legend className="sectionTitle">
                 <span className="ejsTag">{"<%= "}</span>
                 <span className="sectionTitleValue">{section.title}</span>
@@ -17,6 +18,7 @@ export default function Section({section}) {
             }
 
             <List list={section.list} />
+            <SkillList list={section.skillList} />
         </fieldset>
     );
 }

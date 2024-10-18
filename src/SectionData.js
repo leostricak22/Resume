@@ -1,10 +1,32 @@
 import {IoCalendar, IoCar, IoLanguage, IoMail} from "react-icons/io5";
-import {FaDiscord, FaGithub, FaLinkedin} from "react-icons/fa";
-import {FaLocationDot} from "react-icons/fa6";
+import {
+    FaBootstrap, FaCpanel,
+    FaDatabase,
+    FaDiscord,
+    FaDocker, FaFigma,
+    FaGit,
+    FaGithub,
+    FaJava,
+    FaLinkedin, FaLinux,
+    FaReact
+} from "react-icons/fa";
+import {FaC, FaLocationDot} from "react-icons/fa6";
+import {
+    SiC,
+    SiCplusplus,
+    SiCsharp, SiGit,
+    SiJavascript, SiJquery, SiMysql,
+    SiNodedotjs,
+    SiPhp,
+    SiPython,
+    SiReact,
+    SiSpringboot
+} from "react-icons/si";
 
 const introductionSection = {
     name: "introduction",
     title: "introduction",
+    sectionFlex: "row",
     subSections: [
         {
             name: "contactInfo",
@@ -62,6 +84,7 @@ const introductionSection = {
 const educationSection = {
     name: "education",
     title: "education",
+    sectionFlex: "column",
     list: [
         {
             value: "III. osnovna škola Čakovec",
@@ -92,6 +115,7 @@ const educationSection = {
 const experienceSection = {
     name: "experience",
     title: "experience",
+    sectionFlex: "column",
     subSections: [
         {
             name: "tacta",
@@ -131,9 +155,122 @@ const experienceSection = {
     ]
 }
 
+const skillsSection = {
+    name: "skills",
+    title: "skills",
+    sectionFlex: "column",
+    subSections: [
+        {
+            name: "programmingLanguages",
+            title: "Programming Languages",
+            skillList: [
+                {
+                    icon: <SiJavascript />,
+                    value: "JavaScript"
+                },
+                {
+                    icon: <SiPhp />,
+                    value: "PHP"
+                },
+                {
+                    icon: <SiPython />,
+                    value: "Python"
+                },
+                {
+                    icon: <SiCsharp />,
+                    value: "C#"
+                },
+                {
+                    icon: <SiCplusplus />,
+                    value: "C++"
+                },
+                {
+                    icon: <FaC />,
+                    value: "C"
+                },
+                {
+                    icon: <FaJava />,
+                    value: "Java"
+                },
+                {
+                    icon: <FaDatabase />,
+                    value: "SQL"
+                },
+            ]
+        },
+        {
+            name: "technologies",
+            title: "Technologies",
+            skillList: [
+                {
+                    icon: <SiSpringboot />,
+                    value: "Spring Boot"
+                },
+                {
+                    icon: <SiNodedotjs />,
+                    value: "Node.js"
+                },
+                {
+                    icon: <SiReact />,
+                    value: "React.js"
+                },
+                {
+                    icon: <FaReact />,
+                    value: "React Native"
+                },
+                {
+                    icon: <FaBootstrap />,
+                    value: "Bootstrap"
+                },
+                {
+                    icon: <SiJquery />,
+                    value: "Jquery"
+                },
+            ]
+        },
+        {
+            name: "tools",
+            title: "Tools",
+            skillList: [
+                {
+                    icon: <SiGit />,
+                    value: "Git"
+                },
+                {
+                    icon: <FaDocker />,
+                    value: "Docker"
+                },
+                {
+                    icon: <FaCpanel />,
+                    value: "cPanel"
+                },
+                {
+                    icon: <FaLinux />,
+                    value: "Linux"
+                },
+                {
+                    icon: <FaFigma />,
+                    value: "Figma"
+                },
+            ]
+        },
+        {
+            name: "databases",
+            title: "Databases",
+            skillList: [
+                {
+                    icon: <SiMysql />,
+                    value: "MySQL"
+                },
+            ]
+        }
+    ]
+}
+
 const honorsAndAwardsSection = {
     name: "honorsAndAwards",
     title: "honors & awards",
+    sectionFlex: "column",
     list: [
         {
             value: "High School valedictorian",
@@ -158,6 +295,7 @@ const SectionData = [
     introductionSection,
     educationSection,
     experienceSection,
+    skillsSection,
     honorsAndAwardsSection
 ]
 
