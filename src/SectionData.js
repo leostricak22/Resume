@@ -122,7 +122,7 @@ const experienceSection = {
                 {
                     value: "Full Stack Developer Intern",
                     elaboration: [
-                        {value: "Design and development of a mobile application, it's backend and database.", style: "normal"},
+                        {value: "Design and development of a mobile application, its backend and database.", style: "normal"},
                         {value: "April 2024 - June 2024", style: "moreInfo"},
                     ]
                 }
@@ -289,11 +289,27 @@ const honorsAndAwardsSection = {
     ]
 }
 
+const projectsSection = {
+    name: "projects",
+    title: "projects",
+    sectionFlex: "row",
+    list: [
+        {
+            value: "List of all my projects",
+        },
+        {
+            value: "https://projects.barbuddy.net/",
+            href: "https://projects.barbuddy.net/"
+        }
+    ]
+}
+
 const SectionData = [
     introductionSection,
     educationSection,
     experienceSection,
     skillsSection,
+    projectsSection,
     honorsAndAwardsSection
 ]
 
