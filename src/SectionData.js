@@ -1,25 +1,37 @@
 import {IoCalendar, IoCar, IoLanguage, IoMail} from "react-icons/io5";
 import {
-    FaBootstrap, FaCpanel,
-    FaDatabase,
     FaDiscord,
-    FaDocker, FaFigma,
     FaGithub,
-    FaJava,
-    FaLinkedin, FaLinux,
-    FaReact
+    FaLinkedin
 } from "react-icons/fa";
-import {FaC, FaLocationDot} from "react-icons/fa6";
-import {
-    SiCplusplus,
-    SiCsharp, SiGit,
-    SiJavascript, SiJquery, SiMysql,
-    SiNodedotjs,
-    SiPhp,
-    SiPython,
-    SiReact,
-    SiSpringboot
-} from "react-icons/si";
+import {FaLocationDot} from "react-icons/fa6";
+
+// LANGUAGES
+import JsLogo from "./assets/images/icons/js.svg";
+import PHPLogo from "./assets/images/icons/php.svg";
+import PythonLogo from "./assets/images/icons/python.svg";
+import CLogo from "./assets/images/icons/c.svg";
+import CppLogo from "./assets/images/icons/cpp.svg";
+import CsLogo from "./assets/images/icons/cs.svg";
+import JavaLogo from "./assets/images/icons/java.svg";
+import SQLLogo from "./assets/images/icons/sql.svg";
+
+// TECHNOLOGIES
+import ReactLogo from "./assets/images/icons/react.svg";
+import NodeLogo from "./assets/images/icons/nodejs.svg";
+import SpringBootLogo from "./assets/images/icons/spring-boot.svg";
+import BootstrapLogo from "./assets/images/icons/bootstrap.svg";
+import JQueryLogo from "./assets/images/icons/jquery.svg";
+
+// TOOLS
+import DockerLogo from "./assets/images/icons/docker.svg";
+import CPanelLogo from "./assets/images/icons/cpanel.svg";
+import LinuxLogo from "./assets/images/icons/linux.svg";
+import FigmaLogo from "./assets/images/icons/figma.svg";
+import GitLogo from "./assets/images/icons/git.svg";
+
+// DATABASES
+import MySQLLogo from "./assets/images/icons/mysql.svg";
 
 const introductionSection = {
     name: "introduction",
@@ -163,35 +175,35 @@ const skillsSection = {
             title: "Programming Languages",
             skillList: [
                 {
-                    icon: <SiJavascript />,
+                    icon: JsLogo,
                     value: "JavaScript"
                 },
                 {
-                    icon: <SiPhp />,
+                    icon: PHPLogo,
                     value: "PHP"
                 },
                 {
-                    icon: <SiPython />,
+                    icon: PythonLogo,
                     value: "Python"
                 },
                 {
-                    icon: <SiCsharp />,
+                    icon: CsLogo,
                     value: "C#"
                 },
                 {
-                    icon: <SiCplusplus />,
+                    icon: CppLogo,
                     value: "C++"
                 },
                 {
-                    icon: <FaC />,
+                    icon: CLogo,
                     value: "C"
                 },
                 {
-                    icon: <FaJava />,
+                    icon: JavaLogo,
                     value: "Java"
                 },
                 {
-                    icon: <FaDatabase />,
+                    icon: SQLLogo,
                     value: "SQL"
                 },
             ]
@@ -201,27 +213,27 @@ const skillsSection = {
             title: "Technologies",
             skillList: [
                 {
-                    icon: <SiSpringboot />,
+                    icon: SpringBootLogo,
                     value: "Spring Boot"
                 },
                 {
-                    icon: <SiNodedotjs />,
+                    icon: NodeLogo,
                     value: "Node.js"
                 },
                 {
-                    icon: <SiReact />,
+                    icon: ReactLogo,
                     value: "React.js"
                 },
                 {
-                    icon: <FaReact />,
+                    icon: ReactLogo,
                     value: "React Native"
                 },
                 {
-                    icon: <FaBootstrap />,
+                    icon: BootstrapLogo,
                     value: "Bootstrap"
                 },
                 {
-                    icon: <SiJquery />,
+                    icon: JQueryLogo,
                     value: "Jquery"
                 },
             ]
@@ -231,23 +243,23 @@ const skillsSection = {
             title: "Tools",
             skillList: [
                 {
-                    icon: <SiGit />,
+                    icon: GitLogo,
                     value: "Git"
                 },
                 {
-                    icon: <FaDocker />,
+                    icon: DockerLogo,
                     value: "Docker"
                 },
                 {
-                    icon: <FaCpanel />,
+                    icon: CPanelLogo,
                     value: "cPanel"
                 },
                 {
-                    icon: <FaLinux />,
+                    icon: LinuxLogo,
                     value: "Linux"
                 },
                 {
-                    icon: <FaFigma />,
+                    icon: FigmaLogo,
                     value: "Figma"
                 },
             ]
@@ -257,7 +269,7 @@ const skillsSection = {
             title: "Databases",
             skillList: [
                 {
-                    icon: <SiMysql />,
+                    icon: MySQLLogo,
                     value: "MySQL"
                 },
             ]
@@ -300,7 +312,7 @@ const projectsSection = {
         {
             value: "https://projects.barbuddy.net/",
             href: "https://projects.barbuddy.net/"
-        }
+        },
     ]
 }
 

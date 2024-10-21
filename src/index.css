@@ -298,3 +298,9 @@ li span.moreInfo {
     font-size: 14px;
   }
 }
+
+.skillIcon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}

@@ -8,7 +8,7 @@ export default function SkillList({list}) {
                             return (
                                 <li>
                                     <div className="skill">
-                                        <span className="skillIcon">{item.icon}</span>
+                                        <div className={"skillIcon"}><img src={item.icon} alt={item.value} /></div>
                                         <span className="skillValue">{item.value}</span>
                                     </div>
                                 </li>
