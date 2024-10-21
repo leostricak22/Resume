@@ -1,5 +1,6 @@
 import SubSection from "./SubSection";
 import List from "./List";
+import ProjectList from "./ProjectList";
 
 export default function Section({section}) {
     return (
@@ -17,6 +18,7 @@ export default function Section({section}) {
             }
 
             <List list={section.list} />
+            <ProjectList list={section.projectList} />
         </fieldset>
     );
 }

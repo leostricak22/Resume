@@ -305,14 +305,31 @@ const projectsSection = {
     name: "projects",
     title: "projects",
     sectionFlex: "row",
-    list: [
+    projectList: [
         {
-            value: "List of all my projects",
+            title: "Imbus",
+            description: "Imbus is a mobile application that allows users to find experts within Croatia, it was developed as part of the TVZ Mc2 competition.",
         },
         {
-            value: "https://projects.barbuddy.net/",
-            href: "https://projects.barbuddy.net/"
+            title: "BarBuddy",
+            description: "BarBuddy is a web application designed to make ordering easier in hospitality venues.",
         },
+        {
+            title: "Formulas",
+            description: "Formulas is a web application designed to assist with solving physics and mathematics problems.",
+        },
+        {
+            title: "Zmijica",
+            description: "Snake game is a simple game made in React.js. The goal of the game is to eat as many enemies as possible without hitting the walls or the snake's body.",
+        },
+        {
+            title: "Plinko",
+            description: "A project for mathematics class, explaining Gaussian curve. There is also a Plinko game, accessible from the bottom of the page."
+        },
+        {
+            title: "MicroMania",
+            description: "Micromania is an online tool used for creating, editing, and playing quizzes using Microbits."
+        }
     ]
 }
 
@@ -322,7 +339,7 @@ const SectionData = [
     experienceSection,
     skillsSection,
     projectsSection,
-    honorsAndAwardsSection
+    honorsAndAwardsSection,
 ]
 
 export default SectionData;
