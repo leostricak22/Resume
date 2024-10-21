@@ -247,7 +247,7 @@ const skillsSection = {
                 },
                 {
                     icon: JQueryLogo,
-                    value: "Jquery"
+                    value: "jQuery"
                 },
             ]
         },
