@@ -33,6 +33,19 @@ import GitLogo from "./assets/images/icons/git.svg";
 // DATABASES
 import MySQLLogo from "./assets/images/icons/mysql.svg";
 
+const myStorySection = {
+    name: "myStory",
+    title: "my story",
+    list: [
+        {
+            value: "Hi, I'm Leo Stričak, a dedicated student pursuing my studies at the Zagreb University of Applied Sciences (TVZ) with a keen focus on Computer Science. I am strongly interested in cybersecurity and software development.",
+        },
+        {
+            value: "I am passionate about applying my academic knowledge in practical settings, as evidenced by my involvement in various relevant projects and activities."
+        },
+    ],
+}
+
 const introductionSection = {
     name: "introduction",
     title: "introduction",
@@ -320,7 +333,7 @@ const projectsSection = {
         },
         {
             title: "Zmijica",
-            description: "Snake game is a simple game made in React.js. The goal of the game is to eat as many enemies as possible without hitting the walls or the snake's body.",
+            description: "Snake game is a simple game made in React.js. The goal of the game is to eat as many enemies as possible without hitting the walls or the snakes body.",
         },
         {
             title: "Plinko",
@@ -334,6 +347,7 @@ const projectsSection = {
 }
 
 const SectionData = [
+    myStorySection,
     introductionSection,
     educationSection,
     experienceSection,

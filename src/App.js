@@ -34,7 +34,6 @@ function App() {
                 <span className="jsonValue">"Leo Stričak"</span>
                 <span className="jsonBrackets">{"}"}</span>
             </p>
-
             {
                 SectionData.map((section) => {
                     return (

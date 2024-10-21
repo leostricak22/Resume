@@ -280,8 +280,12 @@ li span.moreInfo {
       font-size: 18px;
   }
 
-  .list {
-      font-size: 16px;
+  ul li {
+    font-size: 10px;
+  }
+
+  .iconList {
+    font-size: 14px;
   }
 
   .sectionCol {
@@ -310,7 +314,7 @@ li span.moreInfo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
   padding: 0;
 }
 
@@ -321,7 +325,7 @@ li span.moreInfo {
   margin-bottom: 10px;
   background-color: var(--themeBackgroundColor);
   border: 1px solid var(--themeColor);
-  width: 45%;
+  width: 46%;
 }
 
 .projectTitle {
@@ -350,6 +354,12 @@ li span.moreInfo {
   font-size: 16px;
 }
 
+@media screen and (min-width: 1500px) {
+  .project {
+    width: 47%;
+  }
+}
+
 @media screen and (max-width: 690px) {
   .project {
     width: 100%;
@@ -362,4 +372,8 @@ li span.moreInfo {
   .projectDescription {
     font-size: 14px;
   }
+}
+
+.description {
+  color: var(--themeColor);
 }
