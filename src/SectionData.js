@@ -7,7 +7,7 @@ import {
 import {FaLocationDot} from "react-icons/fa6";
 
 // LANGUAGES
-import JsLogo from "./assets/images/icons/js.svg";
+import TypeScriptLogo from "./assets/images/icons/typescript.svg";
 import PHPLogo from "./assets/images/icons/php.svg";
 import PythonLogo from "./assets/images/icons/python.svg";
 import CLogo from "./assets/images/icons/c.svg";
@@ -22,6 +22,8 @@ import NodeLogo from "./assets/images/icons/nodejs.svg";
 import SpringBootLogo from "./assets/images/icons/spring-boot.svg";
 import BootstrapLogo from "./assets/images/icons/bootstrap.svg";
 import JQueryLogo from "./assets/images/icons/jquery.svg";
+import AngularLogo from "./assets/images/icons/angular.svg"
+import ScssLogo from "./assets/images/icons/scss.svg";
 
 // TOOLS
 import DockerLogo from "./assets/images/icons/docker.svg";
@@ -29,9 +31,13 @@ import CPanelLogo from "./assets/images/icons/cpanel.svg";
 import LinuxLogo from "./assets/images/icons/linux.svg";
 import FigmaLogo from "./assets/images/icons/figma.svg";
 import GitLogo from "./assets/images/icons/git.svg";
+import AwsLogo from "./assets/images/icons/aws.svg";
+import TerraformLogo from "./assets/images/icons/terraform.svg";
 
 // DATABASES
 import MySQLLogo from "./assets/images/icons/mysql.svg";
+import PostgreSqlLogo from "./assets/images/icons/postgresql.svg";
+import EventSourceLogo from "./assets/images/icons/event-source.svg"
 
 const myStorySection = {
     name: "myStory",
@@ -129,7 +135,7 @@ const educationSection = {
             elaboration: [
                 {value: "Computer Science", style: "gold"},
                 {value: "Bachelor's Degree", style: "normal"},
-                {value: "September 2023 - 2026 (expected)", style: "moreInfo"},
+                {value: "September 2023 - Present", style: "moreInfo"},
             ]
         }
     ]
@@ -145,13 +151,33 @@ const experienceSection = {
             title: "Tacta",
             list: [
                 {
+                    value: "Full Stack Developer",
+                    elaboration: [
+                        {
+                            value: "Contributed to the design and development of a large-scale platform for clinic and patient management, working across the entire stack from backend services to frontend applications.",
+                            style: "normal"
+                        },
+                        {
+                            value: "April 2025 - Present",
+                            style: "moreInfo"
+                        }
+                    ]
+                },
+                {
                     value: "Full Stack Developer Intern",
                     elaboration: [
-                        {value: "Design and development of a mobile application, its backend and database.", style: "normal"},
-                        {value: "April 2024 - June 2024", style: "moreInfo"},
+                        {
+                            value: "Designed and developed a mobile application with its backend and database as part of the TVZ Mc2 competition.",
+                            style: "normal"
+                        },
+                        {
+                            value: "April 2024 - June 2024",
+                            style: "moreInfo"
+                        }
                     ]
                 }
             ]
+
         },
         {
             name: "limex",
@@ -161,7 +187,7 @@ const experienceSection = {
                     value: "Full Stack Developer",
                     elaboration: [
                         {value: "Design and development of web applications and databases.", style: "normal"},
-                        {value: "July 2023 - December 2023", style: "moreInfo"},
+                        {value: "July 2023 - October 2023", style: "moreInfo"},
                     ]
                 },
                 {
@@ -188,32 +214,32 @@ const skillsSection = {
             title: "Programming Languages",
             skillList: [
                 {
-                    icon: JsLogo,
-                    value: "JavaScript"
+                    icon: JavaLogo,
+                    value: "Java"
                 },
                 {
-                    icon: PHPLogo,
-                    value: "PHP"
+                    icon: TypeScriptLogo,
+                    value: "TypeScript"
                 },
                 {
                     icon: PythonLogo,
                     value: "Python"
                 },
                 {
-                    icon: CsLogo,
-                    value: "C#"
+                    icon: CLogo,
+                    value: "C"
                 },
                 {
                     icon: CppLogo,
                     value: "C++"
                 },
                 {
-                    icon: CLogo,
-                    value: "C"
+                    icon: PHPLogo,
+                    value: "PHP"
                 },
                 {
-                    icon: JavaLogo,
-                    value: "Java"
+                    icon: CsLogo,
+                    value: "C#"
                 },
                 {
                     icon: SQLLogo,
@@ -230,6 +256,10 @@ const skillsSection = {
                     value: "Spring Boot"
                 },
                 {
+                    icon: AngularLogo,
+                    value: "Angular"
+                },
+                {
                     icon: NodeLogo,
                     value: "Node.js"
                 },
@@ -240,6 +270,10 @@ const skillsSection = {
                 {
                     icon: ReactLogo,
                     value: "React Native"
+                },
+                {
+                    icon: ScssLogo,
+                    value: "SCSS"
                 },
                 {
                     icon: BootstrapLogo,
@@ -255,6 +289,14 @@ const skillsSection = {
             name: "tools",
             title: "Tools",
             skillList: [
+                {
+                    icon: AwsLogo,
+                    value: "AWS"
+                },
+                {
+                    icon: TerraformLogo,
+                    value: "Terraform"
+                },
                 {
                     icon: GitLogo,
                     value: "Git"
@@ -285,6 +327,14 @@ const skillsSection = {
                     icon: MySQLLogo,
                     value: "MySQL"
                 },
+                {
+                    icon: PostgreSqlLogo,
+                    value: "PostgreSQL"
+                },
+                {
+                    icon: EventSourceLogo,
+                    value: "Event sourcing"
+                }
             ]
         }
     ]
@@ -296,21 +346,32 @@ const honorsAndAwardsSection = {
     sectionFlex: "column",
     list: [
         {
+            value: "Croatian National Cybersecurity Team Member",
+            gold: true,
+            elaboration: [
+                {value: "ECSC2022 & ECSC2025", style: "normal"},
+                {value: "European Cybersecurity Challenge", style: "moreInfo"},
+            ]
+        },
+        {
+            value: "Hackultet 2.0",
+            gold: true,
+            elaboration: [
+                {
+                    value: "1st place in national CTF cybersecurity competition organized by CARNET and FER",
+                    style: "normal"
+                },
+                {value: "May 2025", style: "moreInfo"}
+            ]
+        },
+        {
             value: "High School valedictorian",
             gold: true,
             elaboration: [
                 {value: "Technical school Čakovec", style: "normal"},
-                {value: "Awarded in 2023", style: "moreInfo"},
+                {value: "May 2023", style: "moreInfo"},
             ]
         },
-        {
-            value: "Croatian National Cybersecurity Team Member",
-            gold: true,
-            elaboration: [
-                {value: "ECSC2022", style: "normal"},
-                {value: "European Cybersecurity Challenge 2022", style: "moreInfo"},
-            ]
-        }
     ]
 }
 
@@ -351,9 +412,9 @@ const SectionData = [
     introductionSection,
     educationSection,
     experienceSection,
+    honorsAndAwardsSection,
     skillsSection,
     projectsSection,
-    honorsAndAwardsSection,
 ]
 
 export default SectionData;
