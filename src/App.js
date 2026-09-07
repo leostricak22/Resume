@@ -1,49 +1,46 @@
+import {useState} from "react";
+import {IoMoonOutline, IoSunnyOutline} from "react-icons/io5";
+
 import SectionData from "./SectionData";
 import Section from "./components/Section";
-import {IoSunnyOutline} from "react-icons/io5";
-import {useState} from "react";
+import Titlebar from "./components/Titlebar";
+import Header from "./components/Header";
+import Prompt from "./components/Prompt";
 
 function App() {
     const [theme, setTheme] = useState("dark");
 
     function toggleTheme() {
-        if(theme === "dark") {
-            setTheme("light");
-            document.documentElement.style.setProperty('--themeColor', "#000");
-            document.documentElement.style.setProperty('--themeBackgroundColor', "#d0d1d3");
-            document.documentElement.style.setProperty('--themeJsonNameColor', "#000");
-            document.documentElement.style.setProperty('--themeJsonValueColor', "#000");
-            document.documentElement.style.setProperty('--themeGold', "#775900");
-            document.documentElement.style.setProperty('--themeIconColor', "#000");
-        } else {
-            setTheme("dark");
-            document.documentElement.style.setProperty('--themeColor', "#fff");
-            document.documentElement.style.setProperty('--themeBackgroundColor', "#2f3032");
-            document.documentElement.style.setProperty('--themeJsonNameColor', "#93D0F0");
-            document.documentElement.style.setProperty('--themeJsonValueColor', "#CB8F76");
-            document.documentElement.style.setProperty('--themeGold', "#c7ac3c");
-            document.documentElement.style.setProperty('--themeIconColor', "#888787");
-        }
+        const next = theme === "dark" ? "light" : "dark";
+        setTheme(next);
+        document.documentElement.setAttribute("data-theme", next);
     }
 
     return (
         <div id="main">
-            <p className="title">
-                <span className="jsonBrackets">{"{"}</span>
-                <span className="jsonName">"name"<span className="jsonBrackets">:</span> </span>
-                <span className="jsonValue">"Leo Stričak"</span>
-                <span className="jsonBrackets">{"}"}</span>
-            </p>
-            {
-                SectionData.map((section) => {
-                    return (
-                        <Section section={section} />
-                    );
-                })
-            }
-            <div id="theme" onClick={toggleTheme}>
-                <IoSunnyOutline />
+            <div className="window">
+                <Titlebar />
+                <Header />
+
+                <div className="body">
+                    {SectionData.map((section) => <Section section={section} key={section.name} />)}
+
+                    <div className="cursorFooter">
+                        <Prompt>
+                            <span className="cursor" />
+                        </Prompt>
+                    </div>
+                </div>
             </div>
+
+            <button
+                id="theme"
+                onClick={toggleTheme}
+                aria-label={"Switch to " + (theme === "dark" ? "light" : "dark") + " theme"}
+                title={"Switch to " + (theme === "dark" ? "light" : "dark") + " theme"}
+            >
+                {theme === "dark" ? <IoSunnyOutline /> : <IoMoonOutline />}
+            </button>
         </div>
     );
 }

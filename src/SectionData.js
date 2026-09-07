@@ -1,11 +1,3 @@
-import {IoCalendar, IoCar, IoLanguage, IoMail} from "react-icons/io5";
-import {
-    FaDiscord,
-    FaGithub,
-    FaLinkedin
-} from "react-icons/fa";
-import {FaLocationDot} from "react-icons/fa6";
-
 // LANGUAGES
 import TypeScriptLogo from "./assets/images/icons/typescript.svg";
 import PHPLogo from "./assets/images/icons/php.svg";
@@ -16,16 +8,16 @@ import CsLogo from "./assets/images/icons/cs.svg";
 import JavaLogo from "./assets/images/icons/java.svg";
 import SQLLogo from "./assets/images/icons/sql.svg";
 
-// TECHNOLOGIES
+// FRAMEWORKS
 import ReactLogo from "./assets/images/icons/react.svg";
 import NodeLogo from "./assets/images/icons/nodejs.svg";
 import SpringBootLogo from "./assets/images/icons/spring-boot.svg";
 import BootstrapLogo from "./assets/images/icons/bootstrap.svg";
 import JQueryLogo from "./assets/images/icons/jquery.svg";
-import AngularLogo from "./assets/images/icons/angular.svg"
+import AngularLogo from "./assets/images/icons/angular.svg";
 import ScssLogo from "./assets/images/icons/scss.svg";
 
-// TOOLS
+// INFRA
 import DockerLogo from "./assets/images/icons/docker.svg";
 import CPanelLogo from "./assets/images/icons/cpanel.svg";
 import LinuxLogo from "./assets/images/icons/linux.svg";
@@ -34,387 +26,231 @@ import GitLogo from "./assets/images/icons/git.svg";
 import AwsLogo from "./assets/images/icons/aws.svg";
 import TerraformLogo from "./assets/images/icons/terraform.svg";
 
-// DATABASES
+// DATA
 import MySQLLogo from "./assets/images/icons/mysql.svg";
 import PostgreSqlLogo from "./assets/images/icons/postgresql.svg";
-import EventSourceLogo from "./assets/images/icons/event-source.svg"
+import EventSourceLogo from "./assets/images/icons/event-source.svg";
 
-const myStorySection = {
-    name: "myStory",
-    title: "my story",
+export const TitlebarData = {
+    path: "leo@zagreb:~/resume",
+    buttons: ["_", "□", "✕"],
+};
+
+export const HeaderData = {
+    prompt: "whoami",
+    name: "Leo Stričak",
+    intro: "Computer Science student at Zagreb University of Applied Sciences, full stack developer at Tacta, and member of the Croatian National Cybersecurity Team.",
+    chips: [
+        {value: "stricak.leo@gmail.com", href: "mailto:stricak.leo@gmail.com"},
+        {value: "github/leostricak22", href: "https://github.com/leostricak22"},
+        {value: "in/leostricak22", href: "https://www.linkedin.com/in/leostricak22"},
+        {value: "discord/leostricak22"},
+        {value: "Zagreb, Croatia", faint: true},
+    ],
+};
+
+const honorsSection = {
+    name: "honors",
+    prompt: "cat honors.md",
     list: [
         {
-            value: "Hi, I'm Leo Stričak, a dedicated student pursuing my studies at the Zagreb University of Applied Sciences (TVZ) with a keen focus on Computer Science. I am strongly interested in cybersecurity and software development.",
+            gutter: "ECSC 2022, 2025",
+            title: "Croatian National Cybersecurity Team Member",
+            elaboration: [
+                {value: "European Cybersecurity Challenge", style: "subtitle"},
+            ],
         },
         {
-            value: "I am passionate about applying my academic knowledge in practical settings, as evidenced by my involvement in various relevant projects and activities."
+            gutter: "May 2025",
+            title: "Hackultet 2.0 — 1st place",
+            elaboration: [
+                {value: "National CTF competition organized by CARNET and FER", style: "subtitle"},
+            ],
+        },
+        {
+            gutter: "May 2023",
+            title: "High School Valedictorian",
+            elaboration: [
+                {value: "Technical school Čakovec", style: "subtitle"},
+            ],
         },
     ],
-}
-
-const introductionSection = {
-    name: "introduction",
-    title: "introduction",
-    sectionFlex: "row",
-    subSections: [
-        {
-            name: "contactInfo",
-            title: "Contact info",
-            list: [
-                {
-                    icon: <IoMail />,
-                    value:"stricak.leo@gmail.com",
-                    href:"mailto:stricak.leo@gmail.com"
-                },
-                {
-                    icon: <FaLinkedin />,
-                    value:"/in/leostricak22",
-                    href:"https://www.linkedin.com/in/leostricak22"
-                },
-                {
-                    icon: <FaGithub />,
-                    value: "leostricak22",
-                    href: "https://www.github.com/leostricak22"
-                },
-                {
-                    icon: <FaDiscord />,
-                    value: "leostricak22"
-                }
-            ]
-        },
-        {
-            name: "aboutMe",
-            title: "About me",
-            list: [
-                {
-                    icon: <FaLocationDot />,
-                    value: "Zagreb, Croatia"
-                },
-                {
-                    icon: <IoCalendar />,
-                    value: "November, 2004"
-                },
-                {
-                    icon: <IoCar />,
-                    value: "AM B F G"
-                },
-                {
-                    icon: <IoLanguage />,
-                    value: [
-                        "Croatian - Native proficiency",
-                        "English - Full professional proficiency"
-                    ]
-                }
-            ]
-        }
-    ]
-}
-
-const educationSection = {
-    name: "education",
-    title: "education",
-    sectionFlex: "column",
-    list: [
-        {
-            value: "III. osnovna škola Čakovec",
-            elaboration: [
-                {value: "Middle School Diploma", style: "normal"},
-                {value: "September 2011 - June 2019", style: "moreInfo"},
-            ]
-        },
-        {
-            value: "Technical school Čakovec",
-            elaboration: [
-                {value: "Computer Technician", style: "gold"},
-                {value: "High School Diploma", style: "normal"},
-                {value: "September 2019 - May 2023", style: "moreInfo"},
-            ]
-        },
-        {
-            value: "Zagreb University of Applied Sciences",
-            elaboration: [
-                {value: "Computer Science", style: "gold"},
-                {value: "Bachelor's Degree", style: "normal"},
-                {value: "September 2023 - Present", style: "moreInfo"},
-            ]
-        }
-    ]
-}
+};
 
 const experienceSection = {
     name: "experience",
-    title: "experience",
-    sectionFlex: "column",
-    subSections: [
+    prompt: "git log --experience",
+    list: [
         {
-            name: "tacta",
-            title: "Tacta",
-            list: [
+            gutter: "Apr 2025 — Present",
+            title: "Full Stack Developer",
+            company: "Tacta",
+            elaboration: [
                 {
-                    value: "Full Stack Developer",
-                    elaboration: [
-                        {
-                            value: "Contributed to the design and development of a large-scale platform for clinic and patient management, working across the entire stack from backend services to frontend applications.",
-                            style: "normal"
-                        },
-                        {
-                            value: "April 2025 - Present",
-                            style: "moreInfo"
-                        }
-                    ]
+                    value: "Contributed to the design and development of a large-scale platform for clinic and patient management, working across the entire stack from backend services to frontend applications.",
+                    style: "description",
                 },
-                {
-                    value: "Full Stack Developer Intern",
-                    elaboration: [
-                        {
-                            value: "Designed and developed a mobile application with its backend and database as part of the TVZ Mc2 competition.",
-                            style: "normal"
-                        },
-                        {
-                            value: "April 2024 - June 2024",
-                            style: "moreInfo"
-                        }
-                    ]
-                }
-            ]
-
+            ],
         },
         {
-            name: "limex",
-            title: "Limex Computer & Software",
-            list: [
+            gutter: "Apr — Jun 2024",
+            title: "Full Stack Developer Intern",
+            company: "Tacta",
+            elaboration: [
                 {
-                    value: "Full Stack Developer",
-                    elaboration: [
-                        {value: "Design and development of web applications and databases.", style: "normal"},
-                        {value: "July 2023 - October 2023", style: "moreInfo"},
-                    ]
+                    value: "Designed and developed a mobile application with its backend and database as part of the TVZ Mc2 competition.",
+                    style: "description",
                 },
+            ],
+        },
+        {
+            gutter: "Jul — Oct 2023",
+            title: "Full Stack Developer",
+            company: "Limex Computer & Software",
+            elaboration: [
+                {value: "Design and development of web applications and databases.", style: "description"},
+            ],
+        },
+        {
+            gutter: ["Jul — Sep 2022", "Jul — Sep 2021", "Jul — Sep 2020"],
+            title: "Computer Technician",
+            company: "Limex Computer & Software",
+            elaboration: [
                 {
-                    value: "Computer Technician",
-                    elaboration: [
-                        {value: "Computer diagnostics, repairs, installation and maintenance of servers, networks,...", style: "normal"},
-                        {value: "July 2022 - September 2022", style: "moreInfo"},
-                        {value: "July 2021 - September 2021", style: "moreInfo"},
-                        {value: "July 2020 - September 2020", style: "moreInfo"},
-                    ]
-                }
-            ]
-        }
-    ]
-}
+                    value: "Computer diagnostics, repairs, installation and maintenance of servers, networks and related infrastructure.",
+                    style: "description",
+                },
+            ],
+        },
+    ],
+};
 
 const skillsSection = {
     name: "skills",
-    title: "skills",
-    sectionFlex: "column",
+    prompt: "ls skills/",
     subSections: [
         {
-            name: "programmingLanguages",
-            title: "Programming Languages",
+            name: "languages",
+            title: "Languages",
             skillList: [
-                {
-                    icon: JavaLogo,
-                    value: "Java"
-                },
-                {
-                    icon: TypeScriptLogo,
-                    value: "TypeScript"
-                },
-                {
-                    icon: PythonLogo,
-                    value: "Python"
-                },
-                {
-                    icon: CLogo,
-                    value: "C"
-                },
-                {
-                    icon: CppLogo,
-                    value: "C++"
-                },
-                {
-                    icon: PHPLogo,
-                    value: "PHP"
-                },
-                {
-                    icon: CsLogo,
-                    value: "C#"
-                },
-                {
-                    icon: SQLLogo,
-                    value: "SQL"
-                },
-            ]
+                {icon: JavaLogo, value: "Java"},
+                {icon: TypeScriptLogo, value: "TypeScript"},
+                {icon: PythonLogo, value: "Python"},
+                {icon: CLogo, value: "C"},
+                {icon: CppLogo, value: "C++"},
+                {icon: CsLogo, value: "C#"},
+                {icon: PHPLogo, value: "PHP"},
+                {icon: SQLLogo, value: "SQL"},
+            ],
         },
         {
-            name: "technologies",
-            title: "Technologies",
+            name: "frameworks",
+            title: "Frameworks",
             skillList: [
-                {
-                    icon: SpringBootLogo,
-                    value: "Spring Boot"
-                },
-                {
-                    icon: AngularLogo,
-                    value: "Angular"
-                },
-                {
-                    icon: NodeLogo,
-                    value: "Node.js"
-                },
-                {
-                    icon: ReactLogo,
-                    value: "React.js"
-                },
-                {
-                    icon: ReactLogo,
-                    value: "React Native"
-                },
-                {
-                    icon: ScssLogo,
-                    value: "SCSS"
-                },
-                {
-                    icon: BootstrapLogo,
-                    value: "Bootstrap"
-                },
-                {
-                    icon: JQueryLogo,
-                    value: "jQuery"
-                },
-            ]
+                {icon: SpringBootLogo, value: "Spring Boot"},
+                {icon: AngularLogo, value: "Angular"},
+                {icon: ReactLogo, value: "React.js"},
+                {icon: ReactLogo, value: "React Native"},
+                {icon: NodeLogo, value: "Node.js"},
+                {icon: ScssLogo, value: "SCSS"},
+                {icon: BootstrapLogo, value: "Bootstrap"},
+                {icon: JQueryLogo, value: "jQuery"},
+            ],
         },
         {
-            name: "tools",
-            title: "Tools",
+            name: "infra",
+            title: "Infra",
             skillList: [
-                {
-                    icon: AwsLogo,
-                    value: "AWS"
-                },
-                {
-                    icon: TerraformLogo,
-                    value: "Terraform"
-                },
-                {
-                    icon: GitLogo,
-                    value: "Git"
-                },
-                {
-                    icon: DockerLogo,
-                    value: "Docker"
-                },
-                {
-                    icon: CPanelLogo,
-                    value: "cPanel"
-                },
-                {
-                    icon: LinuxLogo,
-                    value: "Linux"
-                },
-                {
-                    icon: FigmaLogo,
-                    value: "Figma"
-                },
-            ]
+                {icon: AwsLogo, value: "AWS", boost: true},
+                {icon: TerraformLogo, value: "Terraform"},
+                {icon: DockerLogo, value: "Docker"},
+                {icon: LinuxLogo, value: "Linux", boost: true},
+                {icon: GitLogo, value: "Git"},
+                {icon: CPanelLogo, value: "cPanel"},
+                {icon: FigmaLogo, value: "Figma"},
+            ],
         },
         {
-            name: "databases",
-            title: "Databases",
+            name: "data",
+            title: "Data",
             skillList: [
-                {
-                    icon: MySQLLogo,
-                    value: "MySQL"
-                },
-                {
-                    icon: PostgreSqlLogo,
-                    value: "PostgreSQL"
-                },
-                {
-                    icon: EventSourceLogo,
-                    value: "Event sourcing"
-                }
-            ]
-        }
-    ]
-}
-
-const honorsAndAwardsSection = {
-    name: "honorsAndAwards",
-    title: "honors & awards",
-    sectionFlex: "column",
-    list: [
-        {
-            value: "Croatian National Cybersecurity Team Member",
-            gold: true,
-            elaboration: [
-                {value: "ECSC2022 & ECSC2025", style: "normal"},
-                {value: "European Cybersecurity Challenge", style: "moreInfo"},
-            ]
+                {icon: PostgreSqlLogo, value: "PostgreSQL", boost: true},
+                {icon: MySQLLogo, value: "MySQL"},
+                {icon: EventSourceLogo, value: "Event sourcing", boost: true},
+            ],
         },
-        {
-            value: "Hackultet 2.0",
-            gold: true,
-            elaboration: [
-                {
-                    value: "1st place in national CTF cybersecurity competition organized by CARNET and FER",
-                    style: "normal"
-                },
-                {value: "May 2025", style: "moreInfo"}
-            ]
-        },
-        {
-            value: "High School valedictorian",
-            gold: true,
-            elaboration: [
-                {value: "Technical school Čakovec", style: "normal"},
-                {value: "May 2023", style: "moreInfo"},
-            ]
-        },
-    ]
-}
+    ],
+};
 
 const projectsSection = {
     name: "projects",
-    title: "projects",
-    sectionFlex: "row",
+    prompt: "ls projects/",
     projectList: [
         {
-            title: "Imbus",
-            description: "Imbus is a mobile application that allows users to find experts within Croatia, it was developed as part of the TVZ Mc2 competition.",
+            title: "imbus",
+            description: "Mobile application for finding experts within Croatia, developed for the TVZ Mc2 competition.",
         },
         {
-            title: "BarBuddy",
-            description: "BarBuddy is a web application designed to make ordering easier in hospitality venues.",
+            title: "barbuddy",
+            description: "Web application designed to make ordering easier in hospitality venues.",
         },
         {
-            title: "Formulas",
-            description: "Formulas is a web application designed to assist with solving physics and mathematics problems.",
+            title: "micromania",
+            description: "Online tool for creating, editing and playing quizzes using Microbits.",
         },
         {
-            title: "Zmijica",
-            description: "Snake game is a simple game made in React.js. The goal of the game is to eat as many enemies as possible without hitting the walls or the snakes body.",
+            title: "formulas",
+            description: "Web application that assists with solving physics and mathematics problems.",
+        },
+    ],
+};
+
+const aboutSection = {
+    name: "about",
+    prompt: "cat about.md",
+    list: [
+        {
+            gutter: "languages",
+            value: [
+                "Croatian — Native proficiency",
+                "English — Full professional proficiency",
+            ],
         },
         {
-            title: "Plinko",
-            description: "A project for mathematics class, explaining Gaussian curve. There is also a Plinko game, accessible from the bottom of the page."
+            gutter: "licence",
+            value: "Driving categories AM, B, F, G",
+        },
+    ],
+};
+
+const educationSection = {
+    name: "education",
+    prompt: "cat education.md",
+    list: [
+        {
+            gutter: "2023 — Present",
+            title: "Zagreb University of Applied Sciences",
+            elaboration: [
+                {value: "Bachelor's Degree, Computer Science", style: "subtitle"},
+            ],
         },
         {
-            title: "MicroMania",
-            description: "Micromania is an online tool used for creating, editing, and playing quizzes using Microbits."
-        }
-    ]
-}
+            gutter: "2019 — 2023",
+            title: "Technical school Čakovec",
+            elaboration: [
+                {value: "Computer Technician, High School Diploma", style: "subtitle"},
+            ],
+        },
+    ],
+};
 
 const SectionData = [
-    myStorySection,
-    introductionSection,
-    educationSection,
+    honorsSection,
     experienceSection,
-    honorsAndAwardsSection,
     skillsSection,
     projectsSection,
-]
+    aboutSection,
+    educationSection,
+];
 
 export default SectionData;
