@@ -3,11 +3,10 @@ import SkillList from "./SkillList";
 
 export default function SubSection({subSection}) {
     return (
-        <fieldset className="subSection">
-            { subSection.name && <legend className="subSectionTitle">{subSection.title}</legend> }
+        <div className="subSection">
+            {subSection.title && <div className="subSectionTitle">{subSection.title}</div>}
             <List list={subSection.list} />
-
             <SkillList list={subSection.skillList} />
-        </fieldset>
+        </div>
     );
 }

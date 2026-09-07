@@ -3,21 +3,18 @@ export default function SkillList({list}) {
         <>
             {list &&
                 <ul className="skillList">
-                    {
-                        list.map((item) => {
-                            return (
-                                <li>
-                                    <div className="skill">
-                                        <div className={"skillIcon"}><img src={item.icon} alt={item.value} /></div>
-                                        <span className="skillValue">{item.value}</span>
-                                    </div>
-                                </li>
-                            );
-                        })
-                    }
+                    {list.map((item) => (
+                        <li className="skill" key={item.value}>
+                            <img
+                                className={"skillIcon" + (item.boost ? " skillIconBoost" : "")}
+                                src={item.icon}
+                                alt=""
+                            />
+                            <span className="skillValue">{item.value}</span>
+                        </li>
+                    ))}
                 </ul>
             }
         </>
-
     );
 }
