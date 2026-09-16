@@ -1,12 +1,11 @@
 import SubSection from "./SubSection";
 import List from "./List";
 import ProjectList from "./ProjectList";
-import Prompt from "./Prompt";
 
 export default function Section({section}) {
     return (
         <section className={"section section-" + section.name}>
-            <Prompt command={section.prompt} />
+            <h2 className="sectionTitle">{section.title}</h2>
 
             {section.subSections &&
                 <div className="subSections">

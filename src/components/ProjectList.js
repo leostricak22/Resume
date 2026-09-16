@@ -2,11 +2,11 @@ export default function ProjectList({list}) {
     return (
         <>
             {list &&
-                <ul className="projectList">
+                <ul className="projects">
                     {list.map((project) => (
                         <li className="project" key={project.title}>
-                            <div className="projectTitle">{project.title}</div>
-                            <p className="projectDescription">{project.description}</p>
+                            <h3 className="projectTitle">{project.title}</h3>
+                            <span className="projectDescription">{project.description}</span>
                         </li>
                     ))}
                 </ul>

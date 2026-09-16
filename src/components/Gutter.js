@@ -1,5 +1,5 @@
-// Renders a date/label gutter cell. A trailing "Present" is highlighted in the
-// accent colour; an array of dates stacks them.
+// Renders the date/label column of an entry. A trailing "Present" is set in the
+// full ink colour so the current role reads first; an array of dates stacks.
 function renderValue(value) {
     const suffix = " - Present";
 
@@ -15,14 +15,16 @@ function renderValue(value) {
     return value;
 }
 
-export default function Gutter({value}) {
+export default function Gutter({value, runIn}) {
+    const className = "dates" + (runIn ? " datesRunIn" : "");
+
     if (Array.isArray(value)) {
         return (
-            <div className="gutter gutterStack">
+            <div className={className + " datesStack"}>
                 {value.map((entry) => <span key={entry}>{renderValue(entry)}</span>)}
             </div>
         );
     }
 
-    return <span className="gutter">{renderValue(value)}</span>;
+    return <span className={className}>{renderValue(value)}</span>;
 }

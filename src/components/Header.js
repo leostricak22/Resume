@@ -1,19 +1,29 @@
 import {HeaderData} from "../SectionData";
-import Prompt from "./Prompt";
 
 export default function Header() {
     return (
-        <header className="header">
-            <Prompt command={HeaderData.prompt} />
-            <h1 className="name">{HeaderData.name}</h1>
-            <p className="intro">{HeaderData.intro}</p>
-            <div className="chips">
-                {HeaderData.chips.map((chip) => (
-                    chip.href
-                        ? <a className="chip" href={chip.href} key={chip.value}>{chip.value}</a>
-                        : <span className={"chip" + (chip.faint ? " chipFaint" : "")} key={chip.value}>{chip.value}</span>
-                ))}
+        <>
+            <header className="masthead">
+                <h1 className="name">
+                    {HeaderData.name.split(" ").map((word) => <span className="nameWord" key={word}>{word}</span>)}
+                </h1>
+                <p className="role">{HeaderData.role}</p>
+            </header>
+
+            {/* Full-bleed colour band: the summary and contacts get poster
+                treatment instead of sitting quietly under the name. */}
+            <div className="band">
+                <div className="bandInner">
+                    <p className="summary">{HeaderData.intro}</p>
+                    <p className="contacts">
+                        {HeaderData.chips.map((chip) => (
+                            chip.href
+                                ? <a className="contact" href={chip.href} key={chip.value}>{chip.value}</a>
+                                : <span className="contact contactPlain" key={chip.value}>{chip.value}</span>
+                        ))}
+                    </p>
+                </div>
             </div>
-        </header>
+        </>
     );
 }

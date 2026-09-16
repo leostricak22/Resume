@@ -3,8 +3,8 @@ export default function Elaboration({elaborations}) {
         <>
             {elaborations.elaboration.map((elaboration) => (
                 elaboration.style === "description"
-                    ? <p className="rowDescription" key={elaboration.value}>{elaboration.value}</p>
-                    : <div className="rowSubtitle" key={elaboration.value}>{elaboration.value}</div>
+                    ? <p className="entryText" key={elaboration.value}>{elaboration.value}</p>
+                    : <p className="entrySubtitle" key={elaboration.value}>{elaboration.value}</p>
             ))}
         </>
     );

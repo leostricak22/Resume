@@ -31,14 +31,15 @@ import MySQLLogo from "./assets/images/icons/mysql.svg";
 import PostgreSqlLogo from "./assets/images/icons/postgresql.svg";
 import EventSourceLogo from "./assets/images/icons/event-source.svg";
 
-export const TitlebarData = {
-    path: "leo@zagreb:~/resume",
-    buttons: ["_", "□", "✕"],
-};
+// Drive's direct-download endpoint, not the /view link: it responds with
+// content-disposition: attachment so the browser saves the PDF instead of
+// opening Drive's viewer.
+export const ResumeUrl =
+    "https://drive.google.com/uc?export=download&id=15ANW83tevBwNCal2a0FjHot1iJHgZRs-";
 
 export const HeaderData = {
-    prompt: "whoami",
     name: "Leo Stričak",
+    role: "Software Developer, Zagreb",
     intro: "Computer Science student at Zagreb University of Applied Sciences, full stack developer at Tacta, and member of the Croatian National Cybersecurity Team.",
     chips: [
         {value: "stricak.leo@gmail.com", href: "mailto:stricak.leo@gmail.com"},
@@ -51,7 +52,7 @@ export const HeaderData = {
 
 const honorsSection = {
     name: "honors",
-    prompt: "cat honors.md",
+    title: "Honors",
     list: [
         {
             gutter: "ECSC 2022, 2025, 2026",
@@ -82,7 +83,7 @@ const honorsSection = {
 
 const experienceSection = {
     name: "experience",
-    prompt: "git log --experience",
+    title: "Experience",
     list: [
         {
             gutter: "Apr 2025 - Present",
@@ -149,7 +150,7 @@ const experienceSection = {
 
 const skillsSection = {
     name: "skills",
-    prompt: "ls skills/",
+    title: "Skills",
     subSections: [
         {
             name: "languages",
@@ -207,7 +208,7 @@ const skillsSection = {
 
 const projectsSection = {
     name: "projects",
-    prompt: "ls projects/",
+    title: "Projects",
     projectList: [
         {
             title: "imbus",
@@ -230,17 +231,17 @@ const projectsSection = {
 
 const aboutSection = {
     name: "about",
-    prompt: "cat about.md",
+    title: "About",
     list: [
         {
-            gutter: "languages",
+            gutter: "Languages",
             value: [
                 "Croatian - Native proficiency",
                 "English - Full professional proficiency",
             ],
         },
         {
-            gutter: "licence",
+            gutter: "Licence",
             value: "Driving categories AM, B, F, G",
         },
     ],
@@ -248,7 +249,7 @@ const aboutSection = {
 
 const educationSection = {
     name: "education",
-    prompt: "cat education.md",
+    title: "Education",
     list: [
         {
             gutter: "2023 - 2026",
