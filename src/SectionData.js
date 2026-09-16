@@ -54,15 +54,18 @@ const honorsSection = {
     prompt: "cat honors.md",
     list: [
         {
-            gutter: "ECSC 2022, 2025",
+            gutter: "ECSC 2022, 2025, 2026",
             title: "Croatian National Cybersecurity Team Member",
             elaboration: [
                 {value: "European Cybersecurity Challenge", style: "subtitle"},
+                {value: "2026 Bochum - Senior, Team Captain", style: "description"},
+                {value: "2025 Warsaw - Senior", style: "description"},
+                {value: "2022 Vienna - Junior", style: "description"},
             ],
         },
         {
             gutter: "May 2025",
-            title: "Hackultet 2.0 — 1st place",
+            title: "Hackultet 2.0 - 1st place",
             elaboration: [
                 {value: "National CTF competition organized by CARNET and FER", style: "subtitle"},
             ],
@@ -82,42 +85,61 @@ const experienceSection = {
     prompt: "git log --experience",
     list: [
         {
-            gutter: "Apr 2025 — Present",
-            title: "Full Stack Developer",
+            gutter: "Apr 2025 - Present",
+            title: "Software Developer",
             company: "Tacta",
             elaboration: [
                 {
-                    value: "Contributed to the design and development of a large-scale platform for clinic and patient management, working across the entire stack from backend services to frontend applications.",
+                    value: "Built full-stack features for a client platform serving 500,000+ users, spanning an Angular frontend and a Java/Spring backend, including reactive services with Spring WebFlux for high-concurrency workloads.",
+                    style: "description",
+                },
+                {
+                    value: "Provisioned and managed cloud infrastructure with AWS, Terraform and Docker over PostgreSQL, automated on-demand startup and shutdown of dev environments to cut idle usage, and streamlined CI/CD pipelines.",
+                    style: "description",
+                },
+                {
+                    value: "Applied event sourcing and domain-driven design to keep complex business logic maintainable, integrated the Alma payment API for installment-based checkout, and implemented secure JWT authentication with refresh token rotation.",
                     style: "description",
                 },
             ],
         },
         {
-            gutter: "Apr — Jun 2024",
-            title: "Full Stack Developer Intern",
+            gutter: "Apr - Jun 2024",
+            title: "Software Developer Intern",
             company: "Tacta",
             elaboration: [
                 {
-                    value: "Designed and developed a mobile application with its backend and database as part of the TVZ Mc2 competition.",
+                    value: "Built a cross-platform mobile application with Java and React Native for the TVZ Mc2 competition, reaching the finals and placing 4th.",
+                    style: "description",
+                },
+                {
+                    value: "Set up containerized deployment with Docker, Flyway migrations and Heroku.",
                     style: "description",
                 },
             ],
         },
         {
-            gutter: "Jul — Oct 2023",
-            title: "Full Stack Developer",
+            gutter: "Jul - Dec 2023",
+            title: "Software Developer",
             company: "Limex Computer & Software",
             elaboration: [
-                {value: "Design and development of web applications and databases.", style: "description"},
+                {
+                    value: "Designed and developed full web applications end to end, from database schema to user-facing interface, with interactive frontends in jQuery, jQWidgets and vanilla JavaScript and backend logic in Node.js.",
+                    style: "description",
+                },
+                {
+                    value: "Built and optimized MySQL databases using functions, routines and stored procedures, and managed deployment and hosting through cPanel with version control in Git.",
+                    style: "description",
+                },
             ],
         },
         {
-            gutter: ["Jul — Sep 2022", "Jul — Sep 2021", "Jul — Sep 2020"],
+            gutter: ["Jul - Sep 2022", "Jul - Sep 2021", "Jul - Sep 2020"],
             title: "Computer Technician",
             company: "Limex Computer & Software",
             elaboration: [
                 {
-                    value: "Computer diagnostics, repairs, installation and maintenance of servers, networks and related infrastructure.",
+                    value: "Performed diagnostics, repairs, installation and maintenance of computers, servers and networks, working with MikroTik networking, Linux, Windows Active Directory and cPanel administration.",
                     style: "description",
                 },
             ],
@@ -148,6 +170,7 @@ const skillsSection = {
             title: "Frameworks",
             skillList: [
                 {icon: SpringBootLogo, value: "Spring Boot"},
+                {icon: SpringBootLogo, value: "Spring WebFlux"},
                 {icon: AngularLogo, value: "Angular"},
                 {icon: ReactLogo, value: "React.js"},
                 {icon: ReactLogo, value: "React Native"},
@@ -212,8 +235,8 @@ const aboutSection = {
         {
             gutter: "languages",
             value: [
-                "Croatian — Native proficiency",
-                "English — Full professional proficiency",
+                "Croatian - Native proficiency",
+                "English - Full professional proficiency",
             ],
         },
         {
@@ -228,14 +251,14 @@ const educationSection = {
     prompt: "cat education.md",
     list: [
         {
-            gutter: "2023 — Present",
+            gutter: "2023 - 2026",
             title: "Zagreb University of Applied Sciences",
             elaboration: [
                 {value: "Bachelor's Degree, Computer Science", style: "subtitle"},
             ],
         },
         {
-            gutter: "2019 — 2023",
+            gutter: "2019 - 2023",
             title: "Technical school Čakovec",
             elaboration: [
                 {value: "Computer Technician, High School Diploma", style: "subtitle"},
