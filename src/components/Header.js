@@ -1,8 +1,9 @@
 import {HeaderData} from "../SectionData";
+import Portrait from "../assets/images/portrait.jpg";
 
 export default function Header() {
     return (
-        <>
+        <div className="hero">
             <header className="masthead">
                 <h1 className="name">
                     {HeaderData.name.split(" ").map((word) => <span className="nameWord" key={word}>{word}</span>)}
@@ -10,8 +11,6 @@ export default function Header() {
                 <p className="role">{HeaderData.role}</p>
             </header>
 
-            {/* Full-bleed colour band: the summary and contacts get poster
-                treatment instead of sitting quietly under the name. */}
             <div className="band">
                 <div className="bandInner">
                     <p className="summary">{HeaderData.intro}</p>
@@ -24,6 +23,10 @@ export default function Header() {
                     </p>
                 </div>
             </div>
-        </>
+
+            <div className="portrait">
+                <img src={Portrait} alt={HeaderData.name} />
+            </div>
+        </div>
     );
 }
