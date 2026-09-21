@@ -40,7 +40,7 @@ export const ResumeUrl =
 export const HeaderData = {
     name: "Leo Stričak",
     role: "Software Developer, Zagreb",
-    intro: "Computer Science student at Zagreb University of Applied Sciences, full stack developer at Tacta, and member of the Croatian National Cybersecurity Team.",
+    intro: "Computer Science graduate of Zagreb University of Applied Sciences, full stack developer at Tacta, and member of the Croatian National Cybersecurity Team.",
     chips: [
         {value: "stricak.leo@gmail.com", href: "mailto:stricak.leo@gmail.com"},
         {value: "github/leostricak22", href: "https://github.com/leostricak22"},
@@ -269,12 +269,12 @@ const educationSection = {
 };
 
 const SectionData = [
+    educationSection,
     honorsSection,
     experienceSection,
     skillsSection,
     projectsSection,
     aboutSection,
-    educationSection,
 ];
 
 export default SectionData;
